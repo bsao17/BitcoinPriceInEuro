@@ -1,0 +1,42 @@
+@import 'reset.scss';
+
+.githubApi{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    h1{
+        text-align: center;
+        font-style: italic;
+        text-decoration: underline;
+        font-variant: small-caps;
+
+    }
+    #displayApi{
+        display: flex;
+        width: 30rem;
+        height: 30rem;
+        margin: auto;
+        border: double rgb(158, 156, 156) 0.5rem;
+        background-color: white;
+        box-shadow: black 5px 5px 5px;
+    }
+    a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        width: 10rem;
+        height: 2rem;
+        margin: auto;
+        margin-top: 1rem;
+        border: black solid 0.5px;
+        box-shadow: black 5px 5px 5px;
+        &:active{
+            transform: scale(0.85);
+            box-shadow: black 5px 5px 5px;
+        }
+        &:hover{
+            border: black solid 0.5px;
+        }
+    }
+}

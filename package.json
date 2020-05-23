@@ -1,0 +1,11 @@
+{
+  "name": "apifacebook",
+  "version": "1.0.0",
+  "description": "test de l'API de connection Facebook",
+  "main": "main.js",
+  "scripts": {
+    "sass": "sass --watch style.scss:style.css"
+  },
+  "author": "MB",
+  "license": "ISC"
+}
