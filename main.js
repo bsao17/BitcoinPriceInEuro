@@ -10,8 +10,8 @@ $('#bouton').on('click', function(){
   $.get(url, function(data){
     console.log(data)
     let dataApi = document.createElement('div');
-    dataApi.innerHTML = JSON.stringify(data.bio + '<br>' + data.location);
+    dataApi.innerHTML = JSON.stringify('My name is ' + data.name + ' my pseudo is ' + data.login + ' and i\'ve ' + data.bio + '<br>' + data.location);
     document.getElementById('displayApi').appendChild(dataApi);
-  })
+  }) 
 })
   
