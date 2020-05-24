@@ -13,14 +13,18 @@
     }
     #displayApi{
         display: flex;
-        width: 30rem;
-        height: 30rem;
+        justify-content: center;
+        align-items: center;
+        width: 25rem;
+        height: 25rem;
         margin: auto;
         border: double rgb(158, 156, 156) 0.5rem;
         background-color: white;
         box-shadow: black 5px 5px 5px;
+        font-size: 3rem;
+        text-shadow: grey 3px 5px 5px;
     }
-    a{
+    #bouton{
         display: flex;
         justify-content: center;
         align-items: center;
