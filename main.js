@@ -1,12 +1,16 @@
 let displayRequest = document.getElementById('displayApi');
 
+function callApi(){
+  let url = "https://api.github.com/users/bsao17 ";
+  let auth = '------------------------------'
+  let init = {
+    methode: 'GET',
+    Authorization: btoa(auth)
+  }
 
-
-function hello(){
-  let doc = document.createElement('div');
-  doc.innerHTML = '<a href="https://jquery.com/">jquery applicarion</a>'
-  displayRequest.appendChild(doc)
-
+  fetch(url, init).then(response => console.log(response)).catch(error => console.log(error));
+  let displayResponse = document.createElement('div');
+  
 }
 
-$('#bouton').on('click', hello);
+$('#bouton').on('click', callApi);
