@@ -21,9 +21,10 @@
         border: double rgb(158, 156, 156) 0.5rem;
         background-color: white;
         box-shadow: black 5px 5px 5px;
-        font-size: 3rem;
+        font-size: 1.5rem;
         text-shadow: grey 3px 5px 5px;
-        overflow: hidden;
+        overflow: auto;
+        padding: 5px;
     }
     #bouton{
         display: flex;
