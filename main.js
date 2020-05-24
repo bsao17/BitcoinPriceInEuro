@@ -1,16 +1,16 @@
-let displayRequest = document.getElementById('displayApi');
 
-function callApi(){
-  let url = "https://api.github.com/users/bsao17 ";
-  let auth = '------------------------------'
-  let init = {
-    methode: 'GET',
-    Authorization: btoa(auth)
-  }
 
-  fetch(url, init).then(response => console.log(response)).catch(error => console.log(error));
-  let displayResponse = document.createElement('div');
-  
+let callbackSuccess = function(data){
+  console.log("données api", data);
 }
 
-$('#bouton').on('click', callApi);
+
+$('#bouton').on('click', function(){
+  let url = 'https://api.github.com/users/bsao17 ' 
+  $.get(url, function(data){
+    let dataApi = document.createElement('div');
+    dataApi.innerHTML = data;
+    document.getElementById('displayApi').appendChild(dataApi);
+  })
+})
+  
