@@ -1,5 +1,7 @@
 # testApiGithub
 
-This repository exist only for i able to learn API REST and request AJAX with XMLHttpRequest and fetch() api, and if like me, you wanted learn it, so use it...
+This repository exist only for i able to learn the use of API REST with the requests AJAX that use XMLHttpRequest, fetch() api ans $.get() of jquery so if like me, you want learn it, use it for help you ... 
 
-For this exercise i will use API GITHUB but you can used any API that you prefered
+For this exercise i will use API GITHUB and a lot of others free API  but you can used any API if you prefered,
+
+but the most important thing that you should'nt forget  => i'm a dev junior, beginner so it will have a lot of best code on github and others
