@@ -4,7 +4,7 @@ request1.open('GET',url);
 request1.responseType = 'json';
 request1.send();
 
-request1.onload = ()=>{
+request1.onload = (e)=>{
   if(request1.readyState === XMLHttpRequest.DONE){
     if(request1.status === 200){
       let responseOk = request1.response;
@@ -19,6 +19,10 @@ request1.onload = ()=>{
   }
 }
 
-$('#bouton').on('click', ()=>{
+function event1(){
   window.location.reload();
-});
+}
+
+
+
+setInterval(event1, 10000);

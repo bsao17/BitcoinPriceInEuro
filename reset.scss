@@ -1,7 +1,10 @@
 body{
-    background-color: rgba(134, 134, 134, 0.404);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('pictures/bitcoin-4852534_960_720.jpg');
     margin: 0rem;
-    padding: 0rem;
+    padding: 10%;
 }
 
 a{

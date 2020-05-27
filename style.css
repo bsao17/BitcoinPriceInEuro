@@ -1,7 +1,10 @@
 body {
-  background-color: rgba(134, 134, 134, 0.404);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("pictures/bitcoin-4852534_960_720.jpg");
   margin: 0rem;
-  padding: 0rem;
+  padding: 10%;
 }
 
 a {
@@ -27,42 +30,26 @@ a:visited {
   font-style: italic;
   text-decoration: underline;
   font-variant: small-caps;
+  color: white;
+  font-weight: bold;
+  font-size: 4rem;
 }
 .sectionApi #displayApi {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  width: 25rem;
-  height: 25rem;
+  width: 50rem;
+  height: 30rem;
   margin: auto;
   border: double #9e9c9c 0.5rem;
   background-color: white;
   box-shadow: black 5px 5px 5px;
-  font-size: 2rem;
+  font-size: 3rem;
   text-shadow: grey 3px 5px 5px;
   overflow: auto;
   padding: 5px;
   text-align: justify;
-}
-.sectionApi #bouton {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: bold;
-  width: 10rem;
-  height: 3rem;
-  margin: auto;
-  margin-top: 1rem;
-  border: black solid 0.5px;
-  box-shadow: black 5px 5px 5px;
-}
-.sectionApi #bouton:active {
-  transform: scale(0.85);
-  box-shadow: black 5px 5px 5px;
-}
-.sectionApi #bouton:hover {
-  border: black solid 0.5px;
 }
 
 /*# sourceMappingURL=style.css.map */
