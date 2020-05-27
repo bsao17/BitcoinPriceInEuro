@@ -8,7 +8,16 @@ request1.onload = ()=>{
   if(request1.readyState === XMLHttpRequest.DONE){
     if(request1.status === 200){
       let responseOk = request1.response;
-      console.log(responseOk.EUR.last)
+      console.log('reponse bien reçu', responseOk)
+      $('#apiRest').append(responseOk.EUR.last);
+    }
+    else{
+      console.log('Veuillez réessayer ultérieurement !')
+
     }
   }
 }
+
+$('#bouton').on('click', ()=>{
+  window.location.reload();
+});
