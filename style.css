@@ -17,20 +17,21 @@ a:visited {
   color: black;
 }
 
-.githubApi {
+.sectionApi {
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
-.githubApi h1 {
+.sectionApi h1 {
   text-align: center;
   font-style: italic;
   text-decoration: underline;
   font-variant: small-caps;
 }
-.githubApi #displayApi {
+.sectionApi #displayApi {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
   width: 25rem;
   height: 25rem;
@@ -38,29 +39,29 @@ a:visited {
   border: double #9e9c9c 0.5rem;
   background-color: white;
   box-shadow: black 5px 5px 5px;
-  font-size: 3rem;
+  font-size: 2rem;
   text-shadow: grey 3px 5px 5px;
   overflow: auto;
   padding: 5px;
   text-align: justify;
 }
-.githubApi #bouton {
+.sectionApi #bouton {
   display: flex;
   justify-content: center;
   align-items: center;
   font-weight: bold;
   width: 10rem;
-  height: 2rem;
+  height: 3rem;
   margin: auto;
   margin-top: 1rem;
   border: black solid 0.5px;
   box-shadow: black 5px 5px 5px;
 }
-.githubApi #bouton:active {
+.sectionApi #bouton:active {
   transform: scale(0.85);
   box-shadow: black 5px 5px 5px;
 }
-.githubApi #bouton:hover {
+.sectionApi #bouton:hover {
   border: black solid 0.5px;
 }
 

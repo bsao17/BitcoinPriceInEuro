@@ -10,6 +10,7 @@ request1.onload = ()=>{
       let responseOk = request1.response;
       console.log('reponse bien reçu', responseOk)
       $('#apiRest').append(responseOk.EUR.last);
+      $('#oneEuro').append( 1 / responseOk.EUR.last);
     }
     else{
       console.log('Veuillez réessayer ultérieurement !')
