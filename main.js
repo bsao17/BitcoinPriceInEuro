@@ -1,17 +1,14 @@
+let url = 'https://blockchain.info/ticker';  
+let request1 = new XMLHttpRequest(); 
+request1.open('GET',url);
+request1.responseType = 'json';
+request1.send();
 
-
-let callbackSuccess = function(data){
-  console.log("données api", data);
+request1.onload = ()=>{
+  if(request1.readyState === XMLHttpRequest.DONE){
+    if(request1.status === 200){
+      let responseOk = request1.response;
+      console.log(responseOk.EUR.last)
+    }
+  }
 }
-
-
-$('#bouton').on('click', function(){
-  let url = 'https://api.github.com/users/bsao17 ' 
-  $.get(url, function(data){
-    console.log(data)
-    let dataApi = document.createElement('div');
-    dataApi.innerHTML = JSON.stringify('My name is ' + data.name + ' my pseudo is ' + data.login + ' and i\'ve ' + data.bio + '<br>' + data.location);
-    document.getElementById('displayApi').appendChild(dataApi);
-  }) 
-})
-  
